@@ -52,3 +52,10 @@ SERVER: Python/3.5 aiohttp/0.21.4
 
 {"hello": "world"}
 ```
+
+##Authors:
+
+  * Dairon Medina C. (dairon.medina@gmail.com)
+
+##Found a bug?
+  Awesome, let me know! Send a pull request or a patch. Ask! I'm here to help and will respond to all filed issues.
