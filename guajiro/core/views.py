@@ -29,7 +29,8 @@ class View(object):
 
     def get_route_base(self) -> str:
         class_name = self.get_class_name().lower()
-        view_name, *rest = class_name.split("view")
+        # FIXME: this can be a bug if user specifies something like resourceview
+        view_name, *rest = class_name.split("resource")
         return "{0}".format(view_name)
 
     @property
@@ -40,10 +41,10 @@ class View(object):
             for (method, route) in get_routes(self, attributes):
                 yield (method, route, handle_arguments_and_annotations(view))
 
-    def register(self, app) -> None:
+    def append_to(self, app) -> None:
         for (method, route, handler) in self.routes:
             # FIXME: Use logger here.
-            print(method, route, handler)
+            print(method, route, " ==> ", handler)
             app.router.add_route(method, route, handler)
 
 

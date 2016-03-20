@@ -18,3 +18,37 @@ in the land, but this time in the land of coding.
 The quick way::
 
     `pip install guajiro`
+
+## Usage
+```python3
+from guajiro import Service, View
+from guajiro import ResponseType
+
+
+class HelloResource(View):
+
+    def get(self, request) -> ResponseType.JSON:
+        return {"hello": "world"}
+
+if __name__ == "__main__":
+    service = Service()
+    
+    resource = HelloResource()
+    resource.append_to(service)
+
+    service.run("localhost", 3000)
+```
+
+Finally we can test by hitting our created endpoint:
+
+```bash
+$ curl -i http://localhost:3000/hello/
+
+HTTP/1.1 200 OK
+CONTENT-TYPE: application/json; charset=utf-8
+CONTENT-LENGTH: 18
+DATE: Sun, 20 Mar 2016 21:42:10 GMT
+SERVER: Python/3.5 aiohttp/0.21.4
+
+{"hello": "world"}
+```

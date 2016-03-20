@@ -36,7 +36,7 @@ setup(
             'Topic :: Software Development :: Libraries :: Python Modules',
         ],
         install_requires=[
-            "aiohttp==0.15.0",
-            "aiohttp_jinja2==0.3.0",
+            "aiohttp==0.21.4",
+            "aiohttp_jinja2==0.7.0",
         ],
 )
