@@ -17,7 +17,7 @@ in the land, but this time in the land of coding.
 
 The quick way::
 
-    `pip install guajiro`
+    pip install guajiro
 
 ## Usage
 ```python3
