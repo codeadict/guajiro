@@ -1,6 +1,8 @@
 # Whats this Guajiro stuff?
 
-[![Guajiro](artwork/logo.png?raw=true)](http://github.com/codeadict/guajiro) **Guajiro** is a word used to designate people from countryside in Cuba.
+[![Guajiro](artwork/logo.png?raw=true)](http://github.com/codeadict/guajiro) 
+
+**Guajiro** is a word used to designate people from countryside in Cuba.
 They are usually very hardworking people with lot of culture and traditions.
 What you’re more likely to see when you search “guajiro” are Cuban cowboys wearing 
 hand made hat, riding horses and smoking tobaccos.
