@@ -5,16 +5,16 @@ with open(join(dirname(__file__), 'guajiro/VERSION'), 'rb') as f:
     version = f.read().decode('ascii').strip()
 
 setup(
-        name='Scrapy',
+        name='Guajiro',
         version=version,
-        url='http://scrapy.org',
-        description='Insanely fast high-productivity web services framework built fo enterprise.',
+        url='https://github.com/codeadict/guajiro',
+        description='Insanely fast high-productivity web services framework built with python 3 asyncio features.',
         long_description=open('README.rst').read(),
         author='Dairon Medina',
         maintainer='Dairon Medina',
         maintainer_email='dairon.medina@gmail.com',
         license='BSD',
-        packages=find_packages(exclude=('tests', 'tests.*')),
+        packages=find_packages(exclude=["docs", "tests*"]),
         include_package_data=True,
         zip_safe=False,
         entry_points={
@@ -27,13 +27,16 @@ setup(
             'License :: OSI Approved :: BSD License',
             'Operating System :: OS Independent',
             'Programming Language :: Python',
-            'Programming Language :: Python :: 2',
-            'Programming Language :: Python :: 2.7',
+            "Programming Language :: Python :: 3",
+            "Programming Language :: Python :: 3.3",
+            "Programming Language :: Python :: 3.4",
+            "Programming Language :: Python :: 3.5",
             'Topic :: Internet :: WWW/HTTP',
             'Topic :: Software Development :: Libraries :: Application Frameworks',
             'Topic :: Software Development :: Libraries :: Python Modules',
         ],
         install_requires=[
-            'Twisted>=10.0.0',
+            "aiohttp==0.15.0",
+            "aiohttp_jinja2==0.3.0",
         ],
 )
