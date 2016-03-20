@@ -1,4 +1,4 @@
-![Guajiro](artwork/logo.png?raw=true "Guajiro framework")
+[![Guajiro](artwork/logo.png?raw=true)](http://github.com/codeadict/guajiro)
 
 =======
 Guajiro
