@@ -9,7 +9,7 @@ setup(
         version=version,
         url='https://github.com/codeadict/guajiro',
         description='Insanely fast high-productivity web services framework built with python 3 asyncio features.',
-        long_description=open('README.rst').read(),
+        long_description=open('README.md').read(),
         author='Dairon Medina',
         maintainer='Dairon Medina',
         maintainer_email='dairon.medina@gmail.com',
