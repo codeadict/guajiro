@@ -1,3 +1,5 @@
+![Guajiro](https://raw.githubusercontent.com/codeadict/guajiro/master/artwork/logo.png)
+
 =======
 Guajiro
 =======
@@ -6,7 +8,7 @@ Guajiro
 Overview
 ========
 
-Insanely fast high-productivity web services framework built fo enterprise.
+Insanely fast high-productivity web services framework built with python 3.
 
 Install
 =======
@@ -14,4 +16,3 @@ Install
 The quick way::
 
     pip install guajiro
-
