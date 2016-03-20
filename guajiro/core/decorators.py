@@ -1,8 +1,7 @@
-
 import types
 import functools
 
-from guajiro.core.inspect import get_view_name
+from guajiro.core.inspector import get_view_name
 from guajiro.core.exceptions import HTTPBadRequest
 
 
